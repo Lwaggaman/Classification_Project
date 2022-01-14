@@ -27,7 +27,7 @@ RATING_STARS_DICT = {'it was amazing': 5,
                      '': None}
 
 
-def switch_reviews_mode(driver, book_id, sort_order, rating=''):
+def switch_reviews_mode(driver, book_id, sort_order, rating='5'):
     """
     Copyright (C) 2019 by Omar Einea: https://github.com/OmarEinea/GoodReadsScraper
     Licensed under GPL v3.0: https://github.com/OmarEinea/GoodReadsScraper/blob/master/LICENSE.md
