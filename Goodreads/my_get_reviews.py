@@ -27,7 +27,7 @@ RATING_STARS_DICT = {'it was amazing': 5,
                      '': None}
 
 
-def switch_reviews_mode(driver, book_id, sort_order, rating=1):
+def switch_reviews_mode(driver, book_id, sort_order, rating=5):
     """
     Copyright (C) 2019 by Omar Einea: https://github.com/OmarEinea/GoodReadsScraper
     Licensed under GPL v3.0: https://github.com/OmarEinea/GoodReadsScraper/blob/master/LICENSE.md
@@ -153,9 +153,8 @@ def get_reviews_first_ten_pages(driver, book_id, sort_order):
     try:
         time.sleep(4)
         # Re-order the reviews so that we scrape the newest or oldest reviews instead of the default.
-        if sort_order != 'default':
-            switch_reviews_mode(driver, book_id, sort_order)
-            time.sleep(2)
+        switch_reviews_mode(driver, book_id, sort_order)
+        time.sleep(2)
 
         if sort_order == 'newest' or sort_order == 'oldest':
             select = Select(driver.find_element(By.NAME, str('language_code')))
