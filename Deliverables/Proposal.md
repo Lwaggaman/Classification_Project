@@ -29,10 +29,10 @@ Some of the features to be tried in the model:
 
 ##### Raw
 Here I have scraped some of the reviews for a book, where the url of each reviewer is contained:
-![book reviews](Screenshots/20220109213707.png)
+![book reviews](Visualizations/20220109213707.png)
 
 Here is one of those reviewer's reading history, where each row is a book, and each column is information about the user's reading of the book (date they started it / how they rated it) and the book itself (avg rating, # ratings, genres, etc).
-![reviewers' history](Screenshots/20220109214642.png)
+![reviewers' history](Visualizations/20220109214642.png)
 
 ### Tools
 - `tiktok-scraper` by [Drawrowfly](https://github.com/drawrowfly/tiktok-scraper) to scrape \#booktok content on Tiktok.
