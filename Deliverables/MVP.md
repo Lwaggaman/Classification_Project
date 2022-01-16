@@ -16,10 +16,12 @@ I engineered 6 features at the reader level:
 - Avg \# ratings in books read (measure of book popularity)
 #### Performance
 I engineered 6 features at the reader level and compared their test data prediction performance in 4 classification models without hyperparameter tuning.
+
 ![bar plot](Visualizations/20220115155055.png)
 The Random Forest Classifier had the best performance across the board, while the Logistic Regression model had 0 accuracy.
 While this may be in part due to a slight imbalance in the dataset, and improves as we adjust the cutoff, it implies that the feature-target relationship is not linear.
 In the ROC Curve we can appreciate how the models have better performance than a naive, random guess model at different thresholds.
+
 ![ROC Curve](Visualizations/20220115160148.png)
 
 #### Next Iterations
