@@ -22,8 +22,8 @@ Logistic regression, k-nearest neighbors, and random forest classifiers were use
 
 *Model Training and Performance*
 The final dataset was split 60/20/20 to train the model on the training set, using the test set as a performance benchmark, using the validation set only at the end to test out-of-sample performance on the final model, once it had been trained on the training+test set. I tuned hyperparameters itearing over 10-fold CV models, then conducting a randomized search cross validating the best performing ones or values near them.
-Test set predictions had an F1 score, with a .8 precision score (the relevant metric for our purposes) with threshold adjustment.
-Validation set predictions had an F1 score, with a .8 precision score with threshold adjustment.
+Test set predictions had a .64 F1 score, with a .81 precision score (the relevant metric for our purposes) with 80% threshold adjustment.
+Validation set predictions had a .65 F1 score, with a .85 precision score with 80% threshold adjustment.
 
 #### Tools
 - Selenium, BeautifulSoup, and Goodreads API for data extraction. 
